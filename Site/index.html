@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Сайт квартиры</title>
+   <meta http-equiv="content-type"  content="text/html; charset=utf-8">
+   <link rel="shortcut icon" href="img/icon2.png" type="image/png">
+   <style>
+    body {
+     background: url(img/Backgroud_img.png);
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     z-index: 0;
+    }
+    .header {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      z-index: 2;
+      width: 1903px;
+      height: 60px;
+      background: #606060;
+    }
+    .content {
+     z-index: 1;
+     background: #fff;
+     position: absolute;
+     width: 1903px;
+     left: 0px;
+     top: 450px;
+    }
+    .contentImg {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 50px;
+     margin-bottom: 50px;
+     border-style: solid;
+     border-radius: 10px;
+     border-width: 4px;
+     border-color: #7a7a7a;
+     box-shadow: 0 0 35px rgba(0, 0, 0, 0.8);
+     transition: 0.3s;
+    }
+    .contentImg:hover {
+      height: 800px;
+      margin-bottom: 80px;
+      margin-top: 80px;
+    }
+    .title{
+     text-align: center;
+     font-size: 50px;
+     font-family: Monotype Corsiva, Serif;
+     margin-top: 40px;
+     margin-bottom: 40px;
+    }
+    .line1 {
+      border-radius: 3px;
+      background-color: #7a7a7a;
+      height: 5px;
+      width: 100px;
+      border: 0px;
+      margin-top: 30px;
+    }
+    .call {
+      position: absolute;
+      right: 10px;
+      top: -2px;
+      font-size: 20px;
+      font-family: arial;
+      color: #fff;
+      cursor: pointer;
+    }
+    .headerButton {
+      border: none;
+      height: 60px;
+      font-size: 20px;
+      background: #606060;
+      cursor: pointer;
+      margin-right: 0px;
+      transition: 0.3s;
+      float: left;
+      color: #fff;
+    }
+    .headerButton:hover {
+      height: 70px;
+      background: #808080;
+    }
+   </style>
+ </head>
+ <body>
+ <div class="header">
+  <button class="headerButton">Кнопка1</button>
+  <button class="headerButton">Кнопка2</button>
+  <button class="headerButton">Кнопка3</button>
+  <p class="call">Наш номер 0990806828</p>
+ </div>
+ <div class="content">
+  <hr class="line1">
+  <h1 class="title">Любой текст</h1>
+  <hr class="line1">
+  <img src="img/Interier2.png" alt="interier" class="contentImg" height="600">
+  <img src="img/Interier1.png" alt="interier" class="contentImg" height="600">
+  <img src="img/Interier3.png" alt="interier" class="contentImg" height="600">
+ </div>
+ </body>
+</html>

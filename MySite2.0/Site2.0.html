@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="shortcut icon" href="img/icon.png" type="image/png">
+  <meta name="keywords" content="HTML, Site, Сайт, сайт, мой, мой сайт, 2, 0, 2.0">
+  <meta name="description" content="Просто мой сайт">
+  <meta http-equiv="content-type"  content="text/html; charset=utf-8">
+  <title>Site 2.0</title>
+  <style type="text/css">
+   @font-face { /*Подключение шрифтов*/
+    font-family: 'caviar_dreams';
+     src: url('font/Caviardreams regular/Caviardreams regular.ttf');
+   }
+   body{ /*Параметры всего сайта*/
+    background: url(img/Background_img1.png);
+    z-index: 0;
+    font-family: caviar_dreamsregular;
+   }
+   .Header{ /*Шапка*/
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    width: 1920px;
+    height: 60px;
+    background: #000;
+   }
+   .Logo{ /*Лого*/
+    z-index: 2;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+   }
+   .HeaderButton{ /*Кнопка шапки*/
+    height: 60px;
+    border: 0px;
+    background: #000;
+    transition: 0.2s ease;
+    cursor: pointer;
+    float: left;
+    margin-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: caviar_dreams;
+   }
+   .HeaderButton:hover{ /*Анимация кнопки шапки*/
+    background: #404040;
+    height: 70px;
+   }
+   .EasyButton{ /*Обычная кнопка*/
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: rgb(236,230,208,0.7);
+    border: 2px solid #000;
+    padding: 15px;
+    border-radius: 30px;
+    z-index: 2;
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-family: caviar_dreams;
+   }
+   .EasyButton:hover{ /*Анимация обычной кнопки*/
+    background: rgb(236,230,208);
+   }
+   .Link{ /*Ссылка*/
+    position: absolute;
+    right: 10px;
+    top: 17px;
+    font-family: "Trebuchet MS", sans-serif;
+    opacity: 0.6;
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-family: caviar_dreams;
+   }
+   .Link:hover{ /*Анимация ссылки*/
+    opacity: 1;
+   }
+   .CenterImg{ /*Центральное изображение*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+   }
+   .arrow{
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    animation-name: move;
+    animation-duration: 0.7s;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+   }
+   @keyframes move{
+    0%,100% {}
+    50% {right: 60px; width: 170px;}
+   }
+   .arrow:hover{
+     animation-play-state: running;
+   }
+   .Link2{
+     position: absolute;
+     bottom: 20px;
+     right: 270px;
+     font-family: caviar_dreams;
+   }
+  </style>
+ </head>
+ <body>
+  <div class="Header"> <!--Шапка-->
+   <a class="Logo" href=""> <!--Лого-->
+     <img  src="img/Logo.png" height="30">
+    </a>
+   <form action=""> <!--Cупер кнопка 1-->
+    <button class="HeaderButton">
+     <font color=#ECE6D0 size=5>
+      SUPER BUTTON 1
+     </font>
+    </button>
+   </form>
+   <form action=""> <!--Cупер кнопка 2-->
+    <button class="HeaderButton">
+     <font color=#ECE6D0 size=5>
+      SUPER BUTTON 2
+     </font>
+    </button>
+   </form>
+   <form action=""> <!--Cупер кнопка 3-->
+    <button class="HeaderButton">
+     <font color=#ECE6D0 size=5>
+      SUPER BUTTON 3
+     </font>
+    </button>
+   </form>
+   <a class="Link" href="https://www.instagram.com/marchell0_o/?hl=ru"> <!--Ссылка на инсту автора-->
+    <font color=#ECE6D0 size=4><em>ИНСТАГРАМ АВТОРА</em></font>
+    </a>
+  </div>
+  <form action=""> <!--Омега кнопка-->
+   <button class="EasyButton">
+    <font size=5>
+     <strong>ОМЕГА КНОПКА</strong>
+    </font>
+   </button>
+  </form>
+  <img src="img/Center_img.png" class="CenterImg" width="380"> <!--Центральное изображение-->
+  <a href="https://www.google.com">
+   <font color="#ECE6D0" size="7" class="Link2">
+    <em>NEXT</em>
+   </font>
+   <img src="img/Стрелка.png" width="150" height="55" class="arrow">
+  </a>
+</body>
+</html>
